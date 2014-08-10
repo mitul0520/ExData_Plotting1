@@ -19,7 +19,7 @@ if(!file.exists(filename)){
 ## Read file, data from the dates 2007-02-01 and 2007-02-02
 
 df <- read.csv.sql(filename, sep=";",
-        sql = 'select * from file where Date in ("2/1/2007", "2/2/2007")')
+        sql = 'select * from file where Date in ("1/2/2007", "2/2/2007")')
 
 ## open png device
 png(filename = 'plot1.png')
