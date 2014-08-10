@@ -29,9 +29,9 @@ png(filename = graphFile)
 dt <- strptime(paste(df$Date,df$Time), "%d/%m/%Y %H:%M:%S")
 plot.new()
 plot(dt,df$Sub_metering_1, type='n', xlab='', ylab='Energy sub metering')
-plot(dt,df$Sub_metering_1, pch = '.', xlab='', ylab='', type='l')
+plot(dt,df$Sub_metering_1, pch = '.', xlab='', ylab='Energy sub metering', type='l')
 lines(dt,df$Sub_metering_2,col='red')
-lines(dt,df$Sub_metering_2,col='blue')
+lines(dt,df$Sub_metering_3,col='blue')
 
 legend('topright', 
        legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),
